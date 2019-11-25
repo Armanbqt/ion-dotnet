@@ -108,8 +108,11 @@ namespace IonDotnet.Tests.Integration
 =======
         public void LoadBad_RoundTrip(FileInfo fi)
         {
+<<<<<<< HEAD
             Console.WriteLine("aaa " + fi.FullName);
 >>>>>>> Extending the existing mechanism to include all the tests in ion-tests
+=======
+>>>>>>> Remove extra constol output
             IonLoader.WithReaderOptions(new ReaderOptions { Format = ReaderFormat.Text }).Load(fi);
         }
     }
