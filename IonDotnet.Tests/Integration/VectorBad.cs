@@ -14,6 +14,7 @@ namespace IonDotnet.Tests.Integration
     {
         private static readonly HashSet<string> Excludes = new HashSet<string>
         {
+<<<<<<< HEAD
             "clob_3.ion",
             "clob_4.ion",
             "clob_5.ion",
@@ -48,6 +49,8 @@ namespace IonDotnet.Tests.Integration
             "structWithClosingParen.ion",
             "symbol_10.ion",
             "symbol_11.ion",
+=======
+>>>>>>> Extending the existing mechanism to include all the tests in ion-tests
             "clobWithLongLiteralInlineCommentAtEnd.ion"
         };
 
@@ -99,8 +102,14 @@ namespace IonDotnet.Tests.Integration
         [DynamicData(nameof(BadUtf8Files), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
         [DynamicData(nameof(BadTimestamp), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
         [DynamicData(nameof(BadOutOfRangeTimestamp), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
+<<<<<<< HEAD
         public void LoadBad(FileInfo fi)
         {
+=======
+        public void LoadBad_RoundTrip(FileInfo fi)
+        {
+            Console.WriteLine("aaa " + fi.FullName);
+>>>>>>> Extending the existing mechanism to include all the tests in ion-tests
             IonLoader.WithReaderOptions(new ReaderOptions { Format = ReaderFormat.Text }).Load(fi);
         }
     }
