@@ -103,10 +103,14 @@ namespace IonDotnet.Tests.Integration
         [DynamicData(nameof(BadTimestamp), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
         [DynamicData(nameof(BadOutOfRangeTimestamp), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void LoadBad(FileInfo fi)
         {
 =======
         public void LoadBad_RoundTrip(FileInfo fi)
+=======
+        public void LoadBad(FileInfo fi)
+>>>>>>> Rename the test method in VectorBad
         {
 <<<<<<< HEAD
             Console.WriteLine("aaa " + fi.FullName);
