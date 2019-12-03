@@ -15,6 +15,9 @@ namespace IonDotnet.Tests.Integration
         private static readonly HashSet<string> Excludes = new HashSet<string>
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Excluding failing tests to make the build pass
             "clob_3.ion",
             "clob_4.ion",
             "clob_5.ion",
@@ -49,8 +52,11 @@ namespace IonDotnet.Tests.Integration
             "structWithClosingParen.ion",
             "symbol_10.ion",
             "symbol_11.ion",
+<<<<<<< HEAD
 =======
 >>>>>>> Extending the existing mechanism to include all the tests in ion-tests
+=======
+>>>>>>> Excluding failing tests to make the build pass
             "clobWithLongLiteralInlineCommentAtEnd.ion"
         };
 
