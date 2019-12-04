@@ -456,6 +456,7 @@ namespace IonDotnet.Internals.Text
                 var text = GetSymbolTable().FindKnownSymbol(_v.IntValue);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (text == null && (_v.IntValue > GetSymbolTable().MaxId || _v.IntValue < 0))
 =======
                 if (text == null && (_v.IntValue > GetSymbolTable().MaxId + 1 || _v.IntValue < 0))
@@ -463,6 +464,9 @@ namespace IonDotnet.Internals.Text
 =======
                 if (text == null && (_v.IntValue > GetSymbolTable().MaxId || _v.IntValue < 0))
 >>>>>>> Fix the highest allowable symbol ID
+=======
+                if (text == null && (_v.IntValue > GetSymbolTable().MaxId || _v.IntValue < 0))
+>>>>>>> 71ddfaf21c1def73e0dc2896b019668f813e5825
                 {
                     throw new UnknownSymbolException(_v.IntValue);
                 }

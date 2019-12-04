@@ -16,8 +16,11 @@ namespace IonDotnet.Tests.Integration
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Excluding failing tests to make the build pass
+=======
+>>>>>>> 71ddfaf21c1def73e0dc2896b019668f813e5825
             "clob_3.ion",
             "clob_4.ion",
             "clob_5.ion",
@@ -53,10 +56,13 @@ namespace IonDotnet.Tests.Integration
             "symbol_10.ion",
             "symbol_11.ion",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Extending the existing mechanism to include all the tests in ion-tests
 =======
 >>>>>>> Excluding failing tests to make the build pass
+=======
+>>>>>>> 71ddfaf21c1def73e0dc2896b019668f813e5825
             "clobWithLongLiteralInlineCommentAtEnd.ion"
         };
 
@@ -110,6 +116,7 @@ namespace IonDotnet.Tests.Integration
         [DynamicData(nameof(BadOutOfRangeTimestamp), DynamicDataSourceType.Method, DynamicDataDisplayName = nameof(TestCaseName))]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void LoadBad(FileInfo fi)
         {
 =======
@@ -123,6 +130,10 @@ namespace IonDotnet.Tests.Integration
 >>>>>>> Extending the existing mechanism to include all the tests in ion-tests
 =======
 >>>>>>> Remove extra constol output
+=======
+        public void LoadBad(FileInfo fi)
+        {
+>>>>>>> 71ddfaf21c1def73e0dc2896b019668f813e5825
             IonLoader.WithReaderOptions(new ReaderOptions { Format = ReaderFormat.Text }).Load(fi);
         }
     }
